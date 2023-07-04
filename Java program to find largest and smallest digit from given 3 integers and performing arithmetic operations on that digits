@@ -6,17 +6,15 @@ public class Main
         String s = num+"";      // convert Integer number to String
         int p , q;
         
-        int[] sort = new int[s.length()];     //    create Integer array and store its size as length of string
-        // int[] sort = new int[String.valueOf(num).length()];     //   create Integer array and store its size as length of number
-        // line number 9 and 10 do the same work so we comment line number 10
+        int[] sort = new int[s.length()];
         
-        for(int i = 0 ; i<s.length() ; i++)     // loop start from 0 and exicute length of s times
+        for(int i = 0 ; i<s.length() ; i++) 
         {
             sort[i] = Character.getNumericValue(s.charAt(i));       // comvert String value in numeric value and store them into array 
         }
-        for(int i = 0 ; i<sort.length-1 ; i++)      //  loop start from 0 and iterate upto length of array sort
+        for(int i = 0 ; i<sort.length-1 ; i++)     
         {
-            for(int j = i+1 ; j<sort.length ; j++)  //  this nested loop start from next number of main loop and iterate upto length of array sort
+            for(int j = i+1 ; j<sort.length ; j++) 
             {
                 if(sort[i]>sort[j])     //  cheak First element is smaller then Secont or not 
                 {
@@ -54,14 +52,14 @@ public class Main
         int q2 = arr2[arr2.length-1];
        
         System.out.println("\nOriginal Number: " + n3);
-        System.out.println("Sorted Array: " + Arrays.toString(arr3)); //print sorted array
-        int p3 = arr3[0];   // get first element of array which is smollest element of array
-        int q3 = arr3[arr3.length-1];   // get Last element of array which is Largest element of array
+        System.out.println("Sorted Array: " + Arrays.toString(arr3)); 
+        int p3 = arr3[0];   			// get first element of array which is smollest element of array
+        int q3 = arr3[arr3.length-1];   	// get Last element of array which is Largest element of array
         
-        int addsml = p1+p2+p3;      //store the addition of all smallest number  in addsml veriable
+        int addsml = p1+p2+p3;      		//store the addition of all smallest number  in addsml veriable
         System.out.println("\n\nAddition of smallest digit of number is :" +addsml);
         
-        int addlrg = q1+q2+q3;      //store the addition of all largest number  in addlrg veriable
+        int addlrg = q1+q2+q3;      		//store the addition of all largest number  in addlrg veriable
         System.out.println("\nAddition of largest digit of number is :" +addlrg);
         
         
